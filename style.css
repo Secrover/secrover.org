@@ -54,6 +54,9 @@ html {
     box-sizing: inherit;
 }
 /* End of css reset */
+:root {
+    --main-color: #638eed;
+}
 
 body { 
     font-family: 'Noto Sans', Arial, sans-serif; 
@@ -81,6 +84,11 @@ body {
     margin-bottom: 30px;
     padding: 0 0 40px 0;
 
+    #header-content {
+        margin: 0 auto;
+        max-width: 50%;
+        text-align: center;
+    }
 
     #logo { 
         height: 60px;
@@ -95,8 +103,14 @@ body {
 
     h2 {
         font-size: 24px;
-        color: #777;
+        color: var(--main-color);
         margin-bottom: 40px;
+    }
+
+    p {
+        margin-bottom: 40px;
+        line-height: 1.2em;
+        color: #777;
     }
 
     #cta-buttons {
@@ -134,7 +148,7 @@ body {
     align-items: center;
     border-radius: 20px;
     padding: 20px;
-    background-color: #2a2df2;
+    background-color: var(--main-color);
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
